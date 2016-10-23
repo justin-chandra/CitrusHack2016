@@ -1,22 +1,18 @@
 data = xlsread('PC_Scores.xlsx');
 [rows, columns] = size(data);
 
-minX1 = min(data(1,1:500));
-minY1 = min(data(2,1:500));
+abs_minx = min(data(1,1:1000));
+ymin = min(data(2,1:1000));
 
-maxX1 = max(data(1,1:500));
-maxY1 = max(data(2,1:500));
 
-minX2 = min(data(1,500:1000));
-minY2 = min(data(2,500:1000));
 
-maxX2 = max(data(1,500:1000));
-maxY2 = max(data(2,500:1000));
+% range_x1 = abs(minX1) + abs(maxX1);
+% range_y1 = abs(minY1) + abs(maxY1);
+% 
+% range_x2 = abs(minX2) + abs(maxX2);
+% range_y2 = abs(minY2) + abs(maxY2);
 
-range_x1 = abs(minX1) + abs(maxX1);
-range_y1 = abs(minY1) + abs(maxY1);
 
-range_x2 = abs(minX2
 
 minRow = min(rows);
 maxRow = min(rows);
