@@ -13,11 +13,14 @@ abs_max_y = max(data(2,1:1000));
 % range_x2 = abs(minX2) + abs(maxX2);
 % range_y2 = abs(minY2) + abs(maxY2);
 
-
+x_range = abs(abs_max_x) + abs(abs_min_x);
+y_range = abs(abs_max_y) + abs(abs_min_y);
 
 minRow = min(rows);
 maxRow = min(rows);
 
+area = x_range * y_range;
+square = area / 100;
 % for ii = 1:rows - 1
 %     ii
 % end
